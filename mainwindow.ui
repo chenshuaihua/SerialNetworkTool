@@ -6,15 +6,424 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>966</width>
+    <height>524</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_10">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>串口设置</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>串口</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>波特率</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>校验位</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>数据位</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>停止位</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QComboBox" name="cmb_port_name">
+             <item>
+              <property name="text">
+               <string>COM1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COM2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COM3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COM4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COM5</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COM6</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COM7</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COM8</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cmb_baud_rate">
+             <item>
+              <property name="text">
+               <string>1200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4800</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>38400</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>57600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>115200</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_4">
+             <item>
+              <property name="text">
+               <string>None</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_3">
+             <item>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_5">
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="btn_open">
+          <property name="text">
+           <string>打开串口</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_close">
+          <property name="text">
+           <string>关闭串口</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>接收区设置</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QCheckBox" name="chb_hex">
+               <property name="text">
+                <string>Hex</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="text">
+                <string>ASCII</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string>清除显示</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>发送区设置</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QCheckBox" name="checkBox_3">
+           <property name="text">
+            <string>自动发送</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLineEdit" name="lineEdit"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>ms</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="title">
+       <string>串口数据接收</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QPlainTextEdit" name="plainTextEdit"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLineEdit" name="lint_send1"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_send1">
+           <property name="text">
+            <string>发送</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>网络数据接收</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_3"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string>发送</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_12">
+      <item>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="title">
+         <string>网络设置</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>协议类型</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_6"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>服务器IP地址</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_7"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>服务器端口号</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_8"/>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string>连接</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="text">
+              <string>断开</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="title">
+         <string>接收区设置</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="title">
+         <string>发送区设置</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>966</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
